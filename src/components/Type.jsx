@@ -12,7 +12,7 @@ function Type({text,dependance}) {
     const typed = new Typed(el.current, {
       strings: [text],
       typeSpeed: 10,
-      cursorChar:"",
+      showCursor:false,
       onComplete:(self)=>{
         setComplet(false)
         setOutText(v=>[...v,text])
