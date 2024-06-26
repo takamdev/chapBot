@@ -1,0 +1,88 @@
+body{
+  background-color: rgb(7, 5, 5) !important;
+  color: white;
+}
+
+.container-fluid{
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5vh;
+  height: 500px;
+  width: 100%;
+  background-color: rgb(7, 5, 5) !important;
+  color: azure;
+  border-radius: 20px;
+  position: relative;
+}
+@media screen and (min-width:576px) {
+  .container-fluid{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10vh;
+    height: 500px;
+    width: 800px !important;
+    background-color: rgb(7, 5, 5) !important;
+    color: azure;
+    border-radius: 20px;
+    position: relative;
+  }
+}
+.bot-logo{
+  transform: scale(1.2);
+  margin-left: 10px;
+}
+.content-champ{
+  width: 95%;
+  position: absolute;
+  bottom: 20px;
+  left: 2.5%;
+  right: 2.5%;
+}
+.content-champ textarea{
+  width: 100%;
+  background-color: #5b5959;
+  outline: none;
+  border-radius: 5px;
+  height: 40px;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right:30px ;
+  border: none;
+  resize: none;
+}
+.content-champ textarea::placeholder{
+  color: white;
+}
+.content-champ textarea::-webkit-scrollbar{
+  visibility: hidden;
+}
+
+.content-champ .arrow{
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  transform: scale(1.5);
+}
+.content-champ .loading{
+  position: absolute;
+  top: 3px;
+  right: 15px;
+} 
+
+.content-response{
+  position: absolute;
+  background-color: #5b5959;
+  width: 95%;
+  height: 380px;
+  left: 2.5%;
+  right: 2.5%;
+  padding: 10px;
+  border-radius: 5px;
+  top: 4% !important;
+  overflow-y: scroll;
+  text-align: justify;
+}
+.content-response::-webkit-scrollbar{
+  visibility: hidden;
+}
