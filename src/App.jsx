@@ -16,6 +16,7 @@ function App() {
     <main className='container'>
       <p className="text-end mt-3 fs-4">Chat Bot <FaRobot className="bot-logo"/></p>
       <section className='container-fluid'>
+         
          <div className="content-response">
           {/* message de chat GPT */}
           <Type text={typed} dependance={typed} />
@@ -32,6 +33,9 @@ function App() {
         realiser pas 
         <b style={{color:"#0ef",marginLeft:"5px"}}>Takam Loic Junior</b>
         <img onClick={()=>{window.location.href="https://loic-portfoli0.netlify.app/"}} role="button" className="fs-6 ms-2 rounded-circle" src="/image/toff.png" width = "50" alt="photo" />
+      </p>
+      <p>ceci est le front-end d'un chat-bot pret pour l'intergration de l'api de chatGPT. pour le moment il se contente de de reeécrire le text qu'ont lui fournir <br />
+        une fois que l'api de chatGPT sera integré tout fonctionnera il faut juste un abonnement a openai
       </p>
     </main>
   )
