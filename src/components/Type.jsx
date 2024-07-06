@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Typed from 'typed.js';
 
-function Type({text}) {
+function Type({text,hauteur}) {
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
   const [complet,setComplet]=useState(true)
@@ -15,7 +15,7 @@ function Type({text}) {
       showCursor:false,
       onComplete:(self)=>{
         setComplet(false)
-        setOutText(v=>[...v,text])
+        setOutText(v=>[...v,{msg:text,haut:hauteur}])
       }
       
     });
@@ -30,7 +30,7 @@ function Type({text}) {
     <div className="App">
       {
         outText.map((item,key)=>{
-          return <span key={key}>{item} <br /></span>
+          return <span key={key}>{item.haut}  {item.msg} <br /></span>
         })
 
        

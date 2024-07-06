@@ -7,9 +7,12 @@ import axios from "axios";
 function App() {
   const [text,setText] = useState("")
   const [typed,setTiped]=useState('')
+  const [haut,setHaut]= useState('')
   const [load ,setLoad]=useState(false) 
   const [textLength, setTextLength] =useState(true)
   const add =()=>{
+       setHaut('Vous')
+       setTiped(text)
       // API key :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 
       setLoad(true)
     axios.post("https://api-inference.huggingface.co/models/EleutherAI/gpt-neo-2.7B",{"inputs":text},
@@ -20,6 +23,7 @@ function App() {
        }
       }
     ).then(res=>{
+      setHaut("bot")
       setTiped(res.data[0].generated_text)
       setLoad(false)
     }).catch(err=>console.log(err))
@@ -38,7 +42,7 @@ function App() {
          
          <div className="content-response">
           {/* message de chat GPT */}
-          <Type text={typed}/>
+          <Type text={typed} hauteur={haut}/>
          </div>
          <div className='content-champ'>
            <textarea value={text} onChange={(e)=>{
@@ -61,7 +65,7 @@ function App() {
          </div>
       </section>
       <p className="mt-3 fs-4" >
-        realiser pas 
+        réaliser par
         <b style={{color:"#0ef",marginLeft:"5px"}}>Takam Loic Junior</b>
         <img onClick={()=>{window.location.href="https://loic-portfoli0.netlify.app/"}} role="button" className="fs-6 ms-2 rounded-circle" src="/image/toff.png" width = "50" alt="photo" />
       </p>
