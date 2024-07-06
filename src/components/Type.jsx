@@ -2,7 +2,7 @@ import React from 'react';
 import { useState } from 'react';
 import Typed from 'typed.js';
 
-function Type({text,dependance}) {
+function Type({text}) {
   // Create reference to store the DOM element containing the animation
   const el = React.useRef(null);
   const [complet,setComplet]=useState(true)
@@ -24,13 +24,13 @@ function Type({text,dependance}) {
       typed.destroy();
     };
    
-  }, [dependance]);
+  }, [text]);
 
   return (
     <div className="App">
       {
         outText.map((item,key)=>{
-          return <span key={key}>{item}</span>
+          return <span key={key}>{item} <br /></span>
         })
 
        

@@ -59,10 +59,12 @@ body{
 }
 
 .content-champ .arrow{
+  background-color: white;
+  cursor: pointer !important;
   position: absolute;
-  top: 10px;
+  top: 5px;
   right: 20px;
-  transform: scale(1.5);
+  border: none;
 }
 .content-champ .loading{
   position: absolute;
