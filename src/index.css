@@ -89,3 +89,10 @@ body{
 .content-response::-webkit-scrollbar{
   visibility: hidden;
 }
+
+.item{
+  background-color: black !important;
+  margin-top: 15px;
+  border-radius: 10px !important;
+}
+

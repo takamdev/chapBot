@@ -11,7 +11,7 @@ function App() {
   const [load ,setLoad]=useState(false) 
   const [textLength, setTextLength] =useState(true)
   const add =()=>{
-       setHaut('Vous')
+       setHaut('Vous: ')
        setTiped(text)
       // API key :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 
       setLoad(true)
@@ -23,7 +23,7 @@ function App() {
        }
       }
     ).then(res=>{
-      setHaut("bot")
+      setHaut("ChatBot: ")
       setTiped(res.data[0].generated_text)
       setLoad(false)
     }).catch(err=>console.log(err))
@@ -42,7 +42,9 @@ function App() {
          
          <div className="content-response">
           {/* message de chat GPT */}
+
           <Type text={typed} hauteur={haut}/>
+
          </div>
          <div className='content-champ'>
            <textarea value={text} onChange={(e)=>{
