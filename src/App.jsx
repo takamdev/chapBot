@@ -69,7 +69,7 @@ function App() {
       <p className="mt-3 fs-4" >
         réaliser par
         <b style={{color:"#0ef",marginLeft:"5px"}}>Takam Loic Junior</b>
-        <img onClick={()=>{window.location.href="https://loic-portfoli0.netlify.app/"}} role="button" className="fs-6 ms-2 rounded-circle" src="/image/toff.png" width = "50" alt="photo" />
+        <img onClick={()=>{window.location.href="https://port-folio-five-bay.vercel.app/"}} role="button" className="fs-6 ms-2 rounded-circle" src="/image/toff.png" width = "50" alt="photo" />
       </p>
       
     </main>
