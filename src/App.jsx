@@ -66,10 +66,17 @@ function App() {
            
          </div>
       </section>
-      <p className="mt-3 fs-4" >
+       <a className="mt-3 fs-4" style={{textDecoration:"none",color:"inherit"}} href="https://takam-loic-junior.vercel.app/">
         réaliser par
         <b style={{color:"#0ef",marginLeft:"5px"}}>Takam Loic Junior</b>
-        <img onClick={()=>{window.location.href="https://port-folio-five-bay.vercel.app/"}} role="button" className="fs-6 ms-2 rounded-circle" src="/image/toff.png" width = "50" alt="photo" />
+      </a>
+      <p className="mt-3">
+        <span className="text-danger fs-2">A votre attention</span> <br/>
+
+        Ce chat Bot s’inspire d’un modèle IA de chez Hunging-Face 
+        il n’est pas vraiment interlignent je n’ai pas voulue acheter une clés api sur openAI ,mes il est prêt a recevoir une API de openAI  ne soyez pas suprie si
+        il vous raconte n’importe quoi. <br/>
+       <span className="text-success fw-bold fs-5"> NB : ce chat bot est complet et peut fonctionner correctement si ont l’intègre une API</span>
       </p>
       
     </main>
