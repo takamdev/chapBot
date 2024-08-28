@@ -47,7 +47,7 @@ function App() {
 
          </div>
          <div className='content-champ'>
-           <textarea value={text} onChange={(e)=>{
+           <textarea value={text} autofocus onChange={(e)=>{
              setText(e.target.value)
 
              if(text.length!==0) setTextLength(false)
