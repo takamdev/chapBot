@@ -73,7 +73,7 @@ function App() {
       <p className="mt-3">
         <span className="text-danger fs-2">A votre attention</span> <br/>
 
-        Ce chat Bot s’inspire d’un modèle IA de chez Hunging-Face 
+        Ce chat Bot s’inspire d’un modèle IA de chez <a href="https://huggingface.co/">Hunging-Face</a>
         il n’est pas vraiment interlignent je n’ai pas voulue acheter une clés api sur openAI ,mes il est prêt a recevoir une API de openAI  ne soyez pas suprie si
         il vous raconte n’importe quoi. <br/>
        <span className="text-success fw-bold fs-5"> NB : ce chat bot est complet et peut fonctionner correctement si ont l’intègre une API</span>
